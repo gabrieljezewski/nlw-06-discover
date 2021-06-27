@@ -1,0 +1,181 @@
+.content{
+    max-width: min(112rem, 90%);             /* Descendo o logo e botões do header da tela pra baixo */
+}
+
+#room header{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;         /* Separando o logo dos botões, jogando o logo pra esquerda e botões pra direita */
+}
+
+#room header .buttons{
+    display: flex;
+}
+
+#room header .buttons .button:nth-child(1){
+    margin-right: .8rem;
+    padding: 1.3rem 1.6rem;
+}
+
+#room header .buttons .button:nth-child(1) img{
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#room header .buttons .button:nth-child(2){
+    padding: 1.3rem 3.2rem;
+}
+
+#room header .buttons .button:nth-child(2) img{
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Question Form */
+#question-form h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 4.2rem;
+
+    margin-bottom: 2.4rem;
+}
+
+/* Mexendo na caixa de texto do form */
+#question-form form{
+    border: .2rem solid var(--grey-blue);       /* Criando linha do form */
+    padding: 1.6rem;
+    border-radius: 0 .8rem .8rem .8rem;
+
+    margin-bottom: 1.6rem;
+}
+
+/* Mexendo dentro do form "Oque você quer perguntar?" */
+#question-form form textarea{
+    resize: none;
+    background: transparent;
+
+    width: 100%;
+    outline: none;
+}
+
+/* Mexendo na cor do form "Oque você quer perguntar?" */
+#question-form form textarea::placeholder{
+    color: var(--grey-blue);
+}
+
+#question-form form footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#question-form form footer > div{
+    display: flex;
+    align-items: center;
+
+    color: var(--icons-details);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+/* Mexendo na imagem do cadeado */
+#question-form form footer > div img{
+    margin-right: 0.9rem;
+}
+
+#question-form form footer button{
+    height: auto;
+    padding: .8rem 2.4rem;
+    line-height: 2.4rem;
+}
+
+
+/* Questions */
+.question-wrapper{
+    background: var(--light-blue);      /* Colocando cor de fundo nas questions */
+    margin-bottom: 8px;                 /* Distanciando uma margem da outra */
+    border-radius: 0 .8rem .8rem .8rem;
+    padding: 2.4rem;
+}
+
+.question-wrapper .question-content{
+    display: flex;
+    align-items: center;
+    align-items: flex-start;            /* Deixando alinhado a frase no topo */
+}
+
+.question-wrapper .question-content .user{      /* Mexendo no ícone do user  das perguntas */
+    background: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+
+.question-wrapper .question-content p{
+    margin-left: 1.6rem;                /* Colocando espaçamento da imagem do user pra pergunta */
+    word-break: break-word;             /* Quando escrever uma pergunta grande, faz com que não quebre o layout */
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
+}
+
+.question-wrapper .actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;          /* Vai jogar os itens de marcar como lida e excluir pro canto da dela */
+}
+
+.question-wrapper .actions > a{
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .actions > a > img{
+    margin-right: .8rem;
+}
+
+.question-wrapper .actions > a + a{
+    margin-left: 2.4rem;                /* Espaçamento entre marcar como lida e excluir */
+}
+
+
+/* Question Read */
+.question-wrapper.read{
+    background: var(--grey-medium);
+    
+}
+
+/* Mexendo na cor do ícone da última pergunta */
+.question-wrapper.read .question-content .user{
+    background: var(--grey-blue);
+}
+
+/* No Questions */
+.no-questions{
+    text-align: center;
+    margin-top: 5.3rem;
+}
+
+.no-questions img{
+    max-width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+.no-questions p{
+    font-family: 'Poppins', sans-serif;
+    font-style: 1.8rem;
+    font-weight: 600;
+}
+
+.no-questions p + p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 1.3rem;
+    line-height: 1.9rem;
+}
