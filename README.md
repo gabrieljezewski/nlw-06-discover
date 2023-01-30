@@ -19,5 +19,3 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 - [SQLite](https://www.sqlite.org/index.html)
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-
-Made with by <a href="https://www.linkedin.com/in/gabrieljezewski/">Gabriel Jezewski</a>.
